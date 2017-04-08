@@ -1,0 +1,3976 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/JedWatson/react-select#readme">react-select (v0.9.1)</a>
+</h1>
+<h4>A Select control built with and for ReactJS</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-select">module react-select</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.defaultProps.optionComponent">
+            function <span class="apidocSignatureSpan">react-select.</span>defaultProps.optionComponent
+            <span class="apidocSignatureSpan">(props, context, updater)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.defaultProps.singleValueComponent">
+            function <span class="apidocSignatureSpan">react-select.</span>defaultProps.singleValueComponent
+            <span class="apidocSignatureSpan">(props, context, updater)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.defaultProps.valueComponent">
+            function <span class="apidocSignatureSpan">react-select.</span>defaultProps.valueComponent
+            <span class="apidocSignatureSpan">(props, context, updater)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.getDefaultProps">
+            function <span class="apidocSignatureSpan">react-select.</span>getDefaultProps
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.propTypes.addLabelText">
+            function <span class="apidocSignatureSpan">react-select.</span>propTypes.addLabelText
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.propTypes.allowCreate">
+            function <span class="apidocSignatureSpan">react-select.</span>propTypes.allowCreate
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.propTypes.asyncOptions">
+            function <span class="apidocSignatureSpan">react-select.</span>propTypes.asyncOptions
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.propTypes.inputProps">
+            function <span class="apidocSignatureSpan">react-select.</span>propTypes.inputProps
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.propTypes.options">
+            function <span class="apidocSignatureSpan">react-select.</span>propTypes.options
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.propTypes.value">
+            function <span class="apidocSignatureSpan">react-select.</span>propTypes.value
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-select.</span>defaultProps</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-select.</span>defaultProps.optionComponent.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-select.</span>defaultProps.optionComponent.prototype.__reactAutoBindMap</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-select.</span>defaultProps.singleValueComponent.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-select.</span>defaultProps.singleValueComponent.prototype.__reactAutoBindMap</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-select.</span>defaultProps.valueComponent.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-select.</span>defaultProps.valueComponent.prototype.__reactAutoBindMap</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-select.</span>nodeListType</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-select.</span>propTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-select.</span>displayName</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-select.defaultProps">module react-select.defaultProps</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">react-select.defaultProps.</span>allowCreate</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">react-select.defaultProps.</span>autoload</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">react-select.defaultProps.</span>backspaceRemoves</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">react-select.defaultProps.</span>cacheAsyncResults</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">react-select.defaultProps.</span>clearable</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">react-select.defaultProps.</span>disabled</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">react-select.defaultProps.</span>ignoreCase</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">react-select.defaultProps.</span>isLoading</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">react-select.defaultProps.</span>searchable</span>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.defaultProps.optionComponent">
+            function <span class="apidocSignatureSpan">react-select.defaultProps.</span>optionComponent
+            <span class="apidocSignatureSpan">(props, context, updater)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.defaultProps.singleValueComponent">
+            function <span class="apidocSignatureSpan">react-select.defaultProps.</span>singleValueComponent
+            <span class="apidocSignatureSpan">(props, context, updater)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.defaultProps.valueComponent">
+            function <span class="apidocSignatureSpan">react-select.defaultProps.</span>valueComponent
+            <span class="apidocSignatureSpan">(props, context, updater)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-select.defaultProps.</span>inputProps</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-select.defaultProps.</span>addLabelText</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-select.defaultProps.</span>clearAllText</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-select.defaultProps.</span>clearValueText</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-select.defaultProps.</span>delimiter</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-select.defaultProps.</span>labelKey</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-select.defaultProps.</span>matchPos</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-select.defaultProps.</span>matchProp</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-select.defaultProps.</span>noResultsText</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-select.defaultProps.</span>placeholder</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-select.defaultProps.</span>searchPromptText</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-select.defaultProps.</span>searchingText</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-select.defaultProps.</span>valueKey</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-select.defaultProps.optionComponent">module react-select.defaultProps.optionComponent</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.defaultProps.optionComponent.optionComponent">
+            function <span class="apidocSignatureSpan">react-select.defaultProps.</span>optionComponent
+            <span class="apidocSignatureSpan">(props, context, updater)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-select.defaultProps.optionComponent.</span>propTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-select.defaultProps.optionComponent.</span>displayName</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-select.defaultProps.optionComponent.prototype">module react-select.defaultProps.optionComponent.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.defaultProps.optionComponent.prototype.blockEvent">
+            function <span class="apidocSignatureSpan">react-select.defaultProps.optionComponent.prototype.</span>blockEvent
+            <span class="apidocSignatureSpan">(event)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.defaultProps.optionComponent.prototype.constructor">
+            function <span class="apidocSignatureSpan">react-select.defaultProps.optionComponent.prototype.</span>constructor
+            <span class="apidocSignatureSpan">(props, context, updater)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.defaultProps.optionComponent.prototype.getDOMNode">
+            function <span class="apidocSignatureSpan">react-select.defaultProps.optionComponent.prototype.</span>getDOMNode
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.defaultProps.optionComponent.prototype.handleMouseDown">
+            function <span class="apidocSignatureSpan">react-select.defaultProps.optionComponent.prototype.</span>handleMouseDown
+            <span class="apidocSignatureSpan">(e)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.defaultProps.optionComponent.prototype.handleMouseEnter">
+            function <span class="apidocSignatureSpan">react-select.defaultProps.optionComponent.prototype.</span>handleMouseEnter
+            <span class="apidocSignatureSpan">(e)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.defaultProps.optionComponent.prototype.handleMouseLeave">
+            function <span class="apidocSignatureSpan">react-select.defaultProps.optionComponent.prototype.</span>handleMouseLeave
+            <span class="apidocSignatureSpan">(e)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.defaultProps.optionComponent.prototype.render">
+            function <span class="apidocSignatureSpan">react-select.defaultProps.optionComponent.prototype.</span>render
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-select.defaultProps.optionComponent.prototype.</span>__reactAutoBindMap</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-select.defaultProps.optionComponent.prototype.</span>childContextTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-select.defaultProps.optionComponent.prototype.</span>componentDidMount</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-select.defaultProps.optionComponent.prototype.</span>componentDidUpdate</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-select.defaultProps.optionComponent.prototype.</span>componentWillMount</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-select.defaultProps.optionComponent.prototype.</span>componentWillReceiveProps</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-select.defaultProps.optionComponent.prototype.</span>componentWillUnmount</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-select.defaultProps.optionComponent.prototype.</span>componentWillUpdate</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-select.defaultProps.optionComponent.prototype.</span>contextTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-select.defaultProps.optionComponent.prototype.</span>getChildContext</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-select.defaultProps.optionComponent.prototype.</span>getDefaultProps</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-select.defaultProps.optionComponent.prototype.</span>getInitialState</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-select.defaultProps.optionComponent.prototype.</span>mixins</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-select.defaultProps.optionComponent.prototype.</span>propTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-select.defaultProps.optionComponent.prototype.</span>shouldComponentUpdate</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-select.defaultProps.optionComponent.prototype.</span>statics</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-select.defaultProps.optionComponent.prototype.</span>updateComponent</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-select.defaultProps.optionComponent.prototype.__reactAutoBindMap">module react-select.defaultProps.optionComponent.prototype.__reactAutoBindMap</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.defaultProps.optionComponent.prototype.__reactAutoBindMap.blockEvent">
+            function <span class="apidocSignatureSpan">react-select.defaultProps.optionComponent.prototype.__reactAutoBindMap.</span>blockEvent
+            <span class="apidocSignatureSpan">(event)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.defaultProps.optionComponent.prototype.__reactAutoBindMap.getDOMNode">
+            function <span class="apidocSignatureSpan">react-select.defaultProps.optionComponent.prototype.__reactAutoBindMap.</span>getDOMNode
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.defaultProps.optionComponent.prototype.__reactAutoBindMap.handleMouseDown">
+            function <span class="apidocSignatureSpan">react-select.defaultProps.optionComponent.prototype.__reactAutoBindMap.</span>handleMouseDown
+            <span class="apidocSignatureSpan">(e)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.defaultProps.optionComponent.prototype.__reactAutoBindMap.handleMouseEnter">
+            function <span class="apidocSignatureSpan">react-select.defaultProps.optionComponent.prototype.__reactAutoBindMap.</span>handleMouseEnter
+            <span class="apidocSignatureSpan">(e)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.defaultProps.optionComponent.prototype.__reactAutoBindMap.handleMouseLeave">
+            function <span class="apidocSignatureSpan">react-select.defaultProps.optionComponent.prototype.__reactAutoBindMap.</span>handleMouseLeave
+            <span class="apidocSignatureSpan">(e)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-select.defaultProps.singleValueComponent">module react-select.defaultProps.singleValueComponent</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.defaultProps.singleValueComponent.singleValueComponent">
+            function <span class="apidocSignatureSpan">react-select.defaultProps.</span>singleValueComponent
+            <span class="apidocSignatureSpan">(props, context, updater)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-select.defaultProps.singleValueComponent.</span>propTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-select.defaultProps.singleValueComponent.</span>displayName</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-select.defaultProps.singleValueComponent.prototype">module react-select.defaultProps.singleValueComponent.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.defaultProps.singleValueComponent.prototype.constructor">
+            function <span class="apidocSignatureSpan">react-select.defaultProps.singleValueComponent.prototype.</span>constructor
+            <span class="apidocSignatureSpan">(props, context, updater)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.defaultProps.singleValueComponent.prototype.getDOMNode">
+            function <span class="apidocSignatureSpan">react-select.defaultProps.singleValueComponent.prototype.</span>getDOMNode
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.defaultProps.singleValueComponent.prototype.render">
+            function <span class="apidocSignatureSpan">react-select.defaultProps.singleValueComponent.prototype.</span>render
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-select.defaultProps.singleValueComponent.prototype.</span>__reactAutoBindMap</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-select.defaultProps.singleValueComponent.prototype.</span>childContextTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-select.defaultProps.singleValueComponent.prototype.</span>componentDidMount</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-select.defaultProps.singleValueComponent.prototype.</span>componentDidUpdate</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-select.defaultProps.singleValueComponent.prototype.</span>componentWillMount</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-select.defaultProps.singleValueComponent.prototype.</span>componentWillReceiveProps</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-select.defaultProps.singleValueComponent.prototype.</span>componentWillUnmount</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-select.defaultProps.singleValueComponent.prototype.</span>componentWillUpdate</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-select.defaultProps.singleValueComponent.prototype.</span>contextTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-select.defaultProps.singleValueComponent.prototype.</span>getChildContext</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-select.defaultProps.singleValueComponent.prototype.</span>getDefaultProps</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-select.defaultProps.singleValueComponent.prototype.</span>getInitialState</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-select.defaultProps.singleValueComponent.prototype.</span>mixins</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-select.defaultProps.singleValueComponent.prototype.</span>propTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-select.defaultProps.singleValueComponent.prototype.</span>shouldComponentUpdate</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-select.defaultProps.singleValueComponent.prototype.</span>statics</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-select.defaultProps.singleValueComponent.prototype.</span>updateComponent</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-select.defaultProps.singleValueComponent.prototype.__reactAutoBindMap">module react-select.defaultProps.singleValueComponent.prototype.__reactAutoBindMap</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.defaultProps.singleValueComponent.prototype.__reactAutoBindMap.getDOMNode">
+            function <span class="apidocSignatureSpan">react-select.defaultProps.singleValueComponent.prototype.__reactAutoBindMap.</span>getDOMNode
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-select.defaultProps.valueComponent">module react-select.defaultProps.valueComponent</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.defaultProps.valueComponent.valueComponent">
+            function <span class="apidocSignatureSpan">react-select.defaultProps.</span>valueComponent
+            <span class="apidocSignatureSpan">(props, context, updater)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-select.defaultProps.valueComponent.</span>propTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-select.defaultProps.valueComponent.</span>displayName</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-select.defaultProps.valueComponent.prototype">module react-select.defaultProps.valueComponent.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.defaultProps.valueComponent.prototype.blockEvent">
+            function <span class="apidocSignatureSpan">react-select.defaultProps.valueComponent.prototype.</span>blockEvent
+            <span class="apidocSignatureSpan">(event)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.defaultProps.valueComponent.prototype.constructor">
+            function <span class="apidocSignatureSpan">react-select.defaultProps.valueComponent.prototype.</span>constructor
+            <span class="apidocSignatureSpan">(props, context, updater)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.defaultProps.valueComponent.prototype.getDOMNode">
+            function <span class="apidocSignatureSpan">react-select.defaultProps.valueComponent.prototype.</span>getDOMNode
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.defaultProps.valueComponent.prototype.handleOnRemove">
+            function <span class="apidocSignatureSpan">react-select.defaultProps.valueComponent.prototype.</span>handleOnRemove
+            <span class="apidocSignatureSpan">(event)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.defaultProps.valueComponent.prototype.render">
+            function <span class="apidocSignatureSpan">react-select.defaultProps.valueComponent.prototype.</span>render
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-select.defaultProps.valueComponent.prototype.</span>__reactAutoBindMap</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-select.defaultProps.valueComponent.prototype.</span>childContextTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-select.defaultProps.valueComponent.prototype.</span>componentDidMount</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-select.defaultProps.valueComponent.prototype.</span>componentDidUpdate</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-select.defaultProps.valueComponent.prototype.</span>componentWillMount</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-select.defaultProps.valueComponent.prototype.</span>componentWillReceiveProps</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-select.defaultProps.valueComponent.prototype.</span>componentWillUnmount</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-select.defaultProps.valueComponent.prototype.</span>componentWillUpdate</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-select.defaultProps.valueComponent.prototype.</span>contextTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-select.defaultProps.valueComponent.prototype.</span>getChildContext</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-select.defaultProps.valueComponent.prototype.</span>getDefaultProps</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-select.defaultProps.valueComponent.prototype.</span>getInitialState</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-select.defaultProps.valueComponent.prototype.</span>mixins</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-select.defaultProps.valueComponent.prototype.</span>propTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-select.defaultProps.valueComponent.prototype.</span>shouldComponentUpdate</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-select.defaultProps.valueComponent.prototype.</span>statics</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-select.defaultProps.valueComponent.prototype.</span>updateComponent</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-select.defaultProps.valueComponent.prototype.__reactAutoBindMap">module react-select.defaultProps.valueComponent.prototype.__reactAutoBindMap</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.defaultProps.valueComponent.prototype.__reactAutoBindMap.blockEvent">
+            function <span class="apidocSignatureSpan">react-select.defaultProps.valueComponent.prototype.__reactAutoBindMap.</span>blockEvent
+            <span class="apidocSignatureSpan">(event)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.defaultProps.valueComponent.prototype.__reactAutoBindMap.getDOMNode">
+            function <span class="apidocSignatureSpan">react-select.defaultProps.valueComponent.prototype.__reactAutoBindMap.</span>getDOMNode
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.defaultProps.valueComponent.prototype.__reactAutoBindMap.handleOnRemove">
+            function <span class="apidocSignatureSpan">react-select.defaultProps.valueComponent.prototype.__reactAutoBindMap.</span>handleOnRemove
+            <span class="apidocSignatureSpan">(event)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-select.nodeListType">module react-select.nodeListType</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.nodeListType.installInto">
+            function <span class="apidocSignatureSpan">react-select.nodeListType.</span>installInto
+            <span class="apidocSignatureSpan">(expect)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-select.nodeListType.</span>name</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-select.propTypes">module react-select.propTypes</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.propTypes.addLabelText">
+            function <span class="apidocSignatureSpan">react-select.propTypes.</span>addLabelText
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.propTypes.allowCreate">
+            function <span class="apidocSignatureSpan">react-select.propTypes.</span>allowCreate
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.propTypes.asyncOptions">
+            function <span class="apidocSignatureSpan">react-select.propTypes.</span>asyncOptions
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.propTypes.autoload">
+            function <span class="apidocSignatureSpan">react-select.propTypes.</span>autoload
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.propTypes.backspaceRemoves">
+            function <span class="apidocSignatureSpan">react-select.propTypes.</span>backspaceRemoves
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.propTypes.cacheAsyncResults">
+            function <span class="apidocSignatureSpan">react-select.propTypes.</span>cacheAsyncResults
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.propTypes.className">
+            function <span class="apidocSignatureSpan">react-select.propTypes.</span>className
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.propTypes.clearAllText">
+            function <span class="apidocSignatureSpan">react-select.propTypes.</span>clearAllText
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.propTypes.clearValueText">
+            function <span class="apidocSignatureSpan">react-select.propTypes.</span>clearValueText
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.propTypes.clearable">
+            function <span class="apidocSignatureSpan">react-select.propTypes.</span>clearable
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.propTypes.delimiter">
+            function <span class="apidocSignatureSpan">react-select.propTypes.</span>delimiter
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.propTypes.disabled">
+            function <span class="apidocSignatureSpan">react-select.propTypes.</span>disabled
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.propTypes.filterOption">
+            function <span class="apidocSignatureSpan">react-select.propTypes.</span>filterOption
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.propTypes.filterOptions">
+            function <span class="apidocSignatureSpan">react-select.propTypes.</span>filterOptions
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.propTypes.ignoreCase">
+            function <span class="apidocSignatureSpan">react-select.propTypes.</span>ignoreCase
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.propTypes.inputProps">
+            function <span class="apidocSignatureSpan">react-select.propTypes.</span>inputProps
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.propTypes.isLoading">
+            function <span class="apidocSignatureSpan">react-select.propTypes.</span>isLoading
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.propTypes.labelKey">
+            function <span class="apidocSignatureSpan">react-select.propTypes.</span>labelKey
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.propTypes.matchPos">
+            function <span class="apidocSignatureSpan">react-select.propTypes.</span>matchPos
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.propTypes.matchProp">
+            function <span class="apidocSignatureSpan">react-select.propTypes.</span>matchProp
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.propTypes.multi">
+            function <span class="apidocSignatureSpan">react-select.propTypes.</span>multi
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.propTypes.name">
+            function <span class="apidocSignatureSpan">react-select.propTypes.</span>name
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.propTypes.newOptionCreator">
+            function <span class="apidocSignatureSpan">react-select.propTypes.</span>newOptionCreator
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.propTypes.noResultsText">
+            function <span class="apidocSignatureSpan">react-select.propTypes.</span>noResultsText
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.propTypes.onBlur">
+            function <span class="apidocSignatureSpan">react-select.propTypes.</span>onBlur
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.propTypes.onChange">
+            function <span class="apidocSignatureSpan">react-select.propTypes.</span>onChange
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.propTypes.onFocus">
+            function <span class="apidocSignatureSpan">react-select.propTypes.</span>onFocus
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.propTypes.onInputChange">
+            function <span class="apidocSignatureSpan">react-select.propTypes.</span>onInputChange
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.propTypes.onOptionLabelClick">
+            function <span class="apidocSignatureSpan">react-select.propTypes.</span>onOptionLabelClick
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.propTypes.optionComponent">
+            function <span class="apidocSignatureSpan">react-select.propTypes.</span>optionComponent
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.propTypes.optionRenderer">
+            function <span class="apidocSignatureSpan">react-select.propTypes.</span>optionRenderer
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.propTypes.options">
+            function <span class="apidocSignatureSpan">react-select.propTypes.</span>options
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.propTypes.placeholder">
+            function <span class="apidocSignatureSpan">react-select.propTypes.</span>placeholder
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.propTypes.searchPromptText">
+            function <span class="apidocSignatureSpan">react-select.propTypes.</span>searchPromptText
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.propTypes.searchable">
+            function <span class="apidocSignatureSpan">react-select.propTypes.</span>searchable
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.propTypes.searchingText">
+            function <span class="apidocSignatureSpan">react-select.propTypes.</span>searchingText
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.propTypes.singleValueComponent">
+            function <span class="apidocSignatureSpan">react-select.propTypes.</span>singleValueComponent
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.propTypes.value">
+            function <span class="apidocSignatureSpan">react-select.propTypes.</span>value
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.propTypes.valueComponent">
+            function <span class="apidocSignatureSpan">react-select.propTypes.</span>valueComponent
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.propTypes.valueKey">
+            function <span class="apidocSignatureSpan">react-select.propTypes.</span>valueKey
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.propTypes.valueRenderer">
+            function <span class="apidocSignatureSpan">react-select.propTypes.</span>valueRenderer
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-select.propTypes.addLabelText">module react-select.propTypes.addLabelText</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.propTypes.addLabelText.addLabelText">
+            function <span class="apidocSignatureSpan">react-select.propTypes.</span>addLabelText
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.propTypes.addLabelText.isRequired">
+            function <span class="apidocSignatureSpan">react-select.propTypes.addLabelText.</span>isRequired
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-select.propTypes.allowCreate">module react-select.propTypes.allowCreate</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.propTypes.allowCreate.allowCreate">
+            function <span class="apidocSignatureSpan">react-select.propTypes.</span>allowCreate
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.propTypes.allowCreate.isRequired">
+            function <span class="apidocSignatureSpan">react-select.propTypes.allowCreate.</span>isRequired
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-select.propTypes.asyncOptions">module react-select.propTypes.asyncOptions</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.propTypes.asyncOptions.asyncOptions">
+            function <span class="apidocSignatureSpan">react-select.propTypes.</span>asyncOptions
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.propTypes.asyncOptions.isRequired">
+            function <span class="apidocSignatureSpan">react-select.propTypes.asyncOptions.</span>isRequired
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-select.propTypes.inputProps">module react-select.propTypes.inputProps</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.propTypes.inputProps.inputProps">
+            function <span class="apidocSignatureSpan">react-select.propTypes.</span>inputProps
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.propTypes.inputProps.isRequired">
+            function <span class="apidocSignatureSpan">react-select.propTypes.inputProps.</span>isRequired
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-select.propTypes.options">module react-select.propTypes.options</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.propTypes.options.options">
+            function <span class="apidocSignatureSpan">react-select.propTypes.</span>options
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.propTypes.options.isRequired">
+            function <span class="apidocSignatureSpan">react-select.propTypes.options.</span>isRequired
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-select.propTypes.value">module react-select.propTypes.value</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.propTypes.value.value">
+            function <span class="apidocSignatureSpan">react-select.propTypes.</span>value
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.propTypes.value.isRequired">
+            function <span class="apidocSignatureSpan">react-select.propTypes.value.</span>isRequired
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-select" id="apidoc.module.react-select">module react-select</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.defaultProps.optionComponent" id="apidoc.element.react-select.defaultProps.optionComponent">
+        function <span class="apidocSignatureSpan">react-select.</span>defaultProps.optionComponent
+        <span class="apidocSignatureSpan">(props, context, updater)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">defaultProps.optionComponent = function (props, context, updater) {
+  // This constructor is overridden by mocks. The argument is used
+  // by mocks to assert on what gets mounted.
+
+  if (process.env.NODE_ENV !== 'production') {
+    process.env.NODE_ENV !== 'production' ? warning(this instanceof Constructor, 'Something is calling a React component directly
+. Use a factory or ' + 'JSX instead. See: https://fb.me/react-legacyfactory') : undefined;
+  }
+
+  // Wire up auto-binding
+  if (this.__reactAutoBindMap) {
+    bindAutoBindMethods(this);
+  }
+
+  this.props = props;
+  this.context = context;
+  this.refs = emptyObject;
+  this.updater = updater || ReactNoopUpdateQueue;
+
+  this.state = null;
+
+  // ReactClasses doesn't have constructors. Instead, they use the
+  // getInitialState and componentWillMount methods for initialization.
+
+  var initialState = this.getInitialState ? this.getInitialState() : null;
+  if (process.env.NODE_ENV !== 'production') {
+    // We allow auto-mocks to proceed as if they're returning null.
+    if (typeof initialState === 'undefined' &amp;&amp; this.getInitialState._isMockFunction) {
+      // This is probably bad practice. Consider warning here and
+      // deprecating this convenience.
+      initialState = null;
+    }
+  }
+  !(typeof initialState === 'object' &amp;&amp; !Array.isArray(initialState)) ? process.env.NODE_ENV !== 'production' ? invariant(false, '%
+s.getInitialState(): must return an object or null', Constructor.displayName || 'ReactCompositeComponent') : invariant(false) :
+undefined;
+
+  this.state = initialState;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.defaultProps.singleValueComponent" id="apidoc.element.react-select.defaultProps.singleValueComponent">
+        function <span class="apidocSignatureSpan">react-select.</span>defaultProps.singleValueComponent
+        <span class="apidocSignatureSpan">(props, context, updater)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">defaultProps.singleValueComponent = function (props, context, updater) {
+  // This constructor is overridden by mocks. The argument is used
+  // by mocks to assert on what gets mounted.
+
+  if (process.env.NODE_ENV !== 'production') {
+    process.env.NODE_ENV !== 'production' ? warning(this instanceof Constructor, 'Something is calling a React component directly
+. Use a factory or ' + 'JSX instead. See: https://fb.me/react-legacyfactory') : undefined;
+  }
+
+  // Wire up auto-binding
+  if (this.__reactAutoBindMap) {
+    bindAutoBindMethods(this);
+  }
+
+  this.props = props;
+  this.context = context;
+  this.refs = emptyObject;
+  this.updater = updater || ReactNoopUpdateQueue;
+
+  this.state = null;
+
+  // ReactClasses doesn't have constructors. Instead, they use the
+  // getInitialState and componentWillMount methods for initialization.
+
+  var initialState = this.getInitialState ? this.getInitialState() : null;
+  if (process.env.NODE_ENV !== 'production') {
+    // We allow auto-mocks to proceed as if they're returning null.
+    if (typeof initialState === 'undefined' &amp;&amp; this.getInitialState._isMockFunction) {
+      // This is probably bad practice. Consider warning here and
+      // deprecating this convenience.
+      initialState = null;
+    }
+  }
+  !(typeof initialState === 'object' &amp;&amp; !Array.isArray(initialState)) ? process.env.NODE_ENV !== 'production' ? invariant(false, '%
+s.getInitialState(): must return an object or null', Constructor.displayName || 'ReactCompositeComponent') : invariant(false) :
+undefined;
+
+  this.state = initialState;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.defaultProps.valueComponent" id="apidoc.element.react-select.defaultProps.valueComponent">
+        function <span class="apidocSignatureSpan">react-select.</span>defaultProps.valueComponent
+        <span class="apidocSignatureSpan">(props, context, updater)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">defaultProps.valueComponent = function (props, context, updater) {
+  // This constructor is overridden by mocks. The argument is used
+  // by mocks to assert on what gets mounted.
+
+  if (process.env.NODE_ENV !== 'production') {
+    process.env.NODE_ENV !== 'production' ? warning(this instanceof Constructor, 'Something is calling a React component directly
+. Use a factory or ' + 'JSX instead. See: https://fb.me/react-legacyfactory') : undefined;
+  }
+
+  // Wire up auto-binding
+  if (this.__reactAutoBindMap) {
+    bindAutoBindMethods(this);
+  }
+
+  this.props = props;
+  this.context = context;
+  this.refs = emptyObject;
+  this.updater = updater || ReactNoopUpdateQueue;
+
+  this.state = null;
+
+  // ReactClasses doesn't have constructors. Instead, they use the
+  // getInitialState and componentWillMount methods for initialization.
+
+  var initialState = this.getInitialState ? this.getInitialState() : null;
+  if (process.env.NODE_ENV !== 'production') {
+    // We allow auto-mocks to proceed as if they're returning null.
+    if (typeof initialState === 'undefined' &amp;&amp; this.getInitialState._isMockFunction) {
+      // This is probably bad practice. Consider warning here and
+      // deprecating this convenience.
+      initialState = null;
+    }
+  }
+  !(typeof initialState === 'object' &amp;&amp; !Array.isArray(initialState)) ? process.env.NODE_ENV !== 'production' ? invariant(false, '%
+s.getInitialState(): must return an object or null', Constructor.displayName || 'ReactCompositeComponent') : invariant(false) :
+undefined;
+
+  this.state = initialState;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.getDefaultProps" id="apidoc.element.react-select.getDefaultProps">
+        function <span class="apidocSignatureSpan">react-select.</span>getDefaultProps
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getDefaultProps() {
+		return {
+			addLabelText: 'Add "{label}"?',
+			allowCreate: false,
+			asyncOptions: undefined,
+			autoload: true,
+			backspaceRemoves: true,
+			cacheAsyncResults: true,
+			className: undefined,
+			clearAllText: 'Clear all',
+			clearValueText: 'Clear value',
+			clearable: true,
+			delimiter: ',',
+			disabled: false,
+			ignoreCase: true,
+			inputProps: {},
+			isLoading: false,
+			labelKey: 'label',
+			matchPos: 'any',
+			matchProp: 'any',
+			name: undefined,
+			newOptionCreator: undefined,
+			noResultsText: 'No results found',
+			onChange: undefined,
+			onInputChange: undefined,
+			onOptionLabelClick: undefined,
+			optionComponent: Option,
+			options: undefined,
+			placeholder: 'Select...',
+			searchable: true,
+			searchingText: 'Searching...',
+			searchPromptText: 'Type to search',
+			singleValueComponent: SingleValue,
+			value: undefined,
+			valueComponent: Value,
+			valueKey: 'value'
+		};
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  mixSpecIntoComponent.bind(null, Constructor)
+);
+
+mixSpecIntoComponent(Constructor, spec);
+
+// Initialize the defaultProps property after all mixins have been merged
+if (Constructor.getDefaultProps) {
+  Constructor.defaultProps = Constructor.<span class="apidocCodeKeywordSpan">getDefaultProps</span>();
+}
+
+if ("production" !== process.env.NODE_ENV) {
+  // This is a tag to indicate that the use of these method names is ok,
+  // since it's used with createClass. If it's not, then it's likely a
+  // mistake so we'll warn you to use the static property, property
+  // initializer or constructor respectively.
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.propTypes.addLabelText" id="apidoc.element.react-select.propTypes.addLabelText">
+        function <span class="apidocSignatureSpan">react-select.</span>propTypes.addLabelText
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">propTypes.addLabelText = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.propTypes.allowCreate" id="apidoc.element.react-select.propTypes.allowCreate">
+        function <span class="apidocSignatureSpan">react-select.</span>propTypes.allowCreate
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">propTypes.allowCreate = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.propTypes.asyncOptions" id="apidoc.element.react-select.propTypes.asyncOptions">
+        function <span class="apidocSignatureSpan">react-select.</span>propTypes.asyncOptions
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">propTypes.asyncOptions = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.propTypes.inputProps" id="apidoc.element.react-select.propTypes.inputProps">
+        function <span class="apidocSignatureSpan">react-select.</span>propTypes.inputProps
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">propTypes.inputProps = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.propTypes.options" id="apidoc.element.react-select.propTypes.options">
+        function <span class="apidocSignatureSpan">react-select.</span>propTypes.options
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">propTypes.options = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.propTypes.value" id="apidoc.element.react-select.propTypes.value">
+        function <span class="apidocSignatureSpan">react-select.</span>propTypes.value
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">propTypes.value = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-select.defaultProps" id="apidoc.module.react-select.defaultProps">module react-select.defaultProps</a></h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.defaultProps.optionComponent" id="apidoc.element.react-select.defaultProps.optionComponent">
+        function <span class="apidocSignatureSpan">react-select.defaultProps.</span>optionComponent
+        <span class="apidocSignatureSpan">(props, context, updater)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">optionComponent = function (props, context, updater) {
+  // This constructor is overridden by mocks. The argument is used
+  // by mocks to assert on what gets mounted.
+
+  if (process.env.NODE_ENV !== 'production') {
+    process.env.NODE_ENV !== 'production' ? warning(this instanceof Constructor, 'Something is calling a React component directly
+. Use a factory or ' + 'JSX instead. See: https://fb.me/react-legacyfactory') : undefined;
+  }
+
+  // Wire up auto-binding
+  if (this.__reactAutoBindMap) {
+    bindAutoBindMethods(this);
+  }
+
+  this.props = props;
+  this.context = context;
+  this.refs = emptyObject;
+  this.updater = updater || ReactNoopUpdateQueue;
+
+  this.state = null;
+
+  // ReactClasses doesn't have constructors. Instead, they use the
+  // getInitialState and componentWillMount methods for initialization.
+
+  var initialState = this.getInitialState ? this.getInitialState() : null;
+  if (process.env.NODE_ENV !== 'production') {
+    // We allow auto-mocks to proceed as if they're returning null.
+    if (typeof initialState === 'undefined' &amp;&amp; this.getInitialState._isMockFunction) {
+      // This is probably bad practice. Consider warning here and
+      // deprecating this convenience.
+      initialState = null;
+    }
+  }
+  !(typeof initialState === 'object' &amp;&amp; !Array.isArray(initialState)) ? process.env.NODE_ENV !== 'production' ? invariant(false, '%
+s.getInitialState(): must return an object or null', Constructor.displayName || 'ReactCompositeComponent') : invariant(false) :
+undefined;
+
+  this.state = initialState;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.defaultProps.singleValueComponent" id="apidoc.element.react-select.defaultProps.singleValueComponent">
+        function <span class="apidocSignatureSpan">react-select.defaultProps.</span>singleValueComponent
+        <span class="apidocSignatureSpan">(props, context, updater)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">singleValueComponent = function (props, context, updater) {
+  // This constructor is overridden by mocks. The argument is used
+  // by mocks to assert on what gets mounted.
+
+  if (process.env.NODE_ENV !== 'production') {
+    process.env.NODE_ENV !== 'production' ? warning(this instanceof Constructor, 'Something is calling a React component directly
+. Use a factory or ' + 'JSX instead. See: https://fb.me/react-legacyfactory') : undefined;
+  }
+
+  // Wire up auto-binding
+  if (this.__reactAutoBindMap) {
+    bindAutoBindMethods(this);
+  }
+
+  this.props = props;
+  this.context = context;
+  this.refs = emptyObject;
+  this.updater = updater || ReactNoopUpdateQueue;
+
+  this.state = null;
+
+  // ReactClasses doesn't have constructors. Instead, they use the
+  // getInitialState and componentWillMount methods for initialization.
+
+  var initialState = this.getInitialState ? this.getInitialState() : null;
+  if (process.env.NODE_ENV !== 'production') {
+    // We allow auto-mocks to proceed as if they're returning null.
+    if (typeof initialState === 'undefined' &amp;&amp; this.getInitialState._isMockFunction) {
+      // This is probably bad practice. Consider warning here and
+      // deprecating this convenience.
+      initialState = null;
+    }
+  }
+  !(typeof initialState === 'object' &amp;&amp; !Array.isArray(initialState)) ? process.env.NODE_ENV !== 'production' ? invariant(false, '%
+s.getInitialState(): must return an object or null', Constructor.displayName || 'ReactCompositeComponent') : invariant(false) :
+undefined;
+
+  this.state = initialState;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.defaultProps.valueComponent" id="apidoc.element.react-select.defaultProps.valueComponent">
+        function <span class="apidocSignatureSpan">react-select.defaultProps.</span>valueComponent
+        <span class="apidocSignatureSpan">(props, context, updater)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">valueComponent = function (props, context, updater) {
+  // This constructor is overridden by mocks. The argument is used
+  // by mocks to assert on what gets mounted.
+
+  if (process.env.NODE_ENV !== 'production') {
+    process.env.NODE_ENV !== 'production' ? warning(this instanceof Constructor, 'Something is calling a React component directly
+. Use a factory or ' + 'JSX instead. See: https://fb.me/react-legacyfactory') : undefined;
+  }
+
+  // Wire up auto-binding
+  if (this.__reactAutoBindMap) {
+    bindAutoBindMethods(this);
+  }
+
+  this.props = props;
+  this.context = context;
+  this.refs = emptyObject;
+  this.updater = updater || ReactNoopUpdateQueue;
+
+  this.state = null;
+
+  // ReactClasses doesn't have constructors. Instead, they use the
+  // getInitialState and componentWillMount methods for initialization.
+
+  var initialState = this.getInitialState ? this.getInitialState() : null;
+  if (process.env.NODE_ENV !== 'production') {
+    // We allow auto-mocks to proceed as if they're returning null.
+    if (typeof initialState === 'undefined' &amp;&amp; this.getInitialState._isMockFunction) {
+      // This is probably bad practice. Consider warning here and
+      // deprecating this convenience.
+      initialState = null;
+    }
+  }
+  !(typeof initialState === 'object' &amp;&amp; !Array.isArray(initialState)) ? process.env.NODE_ENV !== 'production' ? invariant(false, '%
+s.getInitialState(): must return an object or null', Constructor.displayName || 'ReactCompositeComponent') : invariant(false) :
+undefined;
+
+  this.state = initialState;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-select.defaultProps.optionComponent" id="apidoc.module.react-select.defaultProps.optionComponent">module react-select.defaultProps.optionComponent</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.defaultProps.optionComponent.optionComponent" id="apidoc.element.react-select.defaultProps.optionComponent.optionComponent">
+        function <span class="apidocSignatureSpan">react-select.defaultProps.</span>optionComponent
+        <span class="apidocSignatureSpan">(props, context, updater)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">optionComponent = function (props, context, updater) {
+  // This constructor is overridden by mocks. The argument is used
+  // by mocks to assert on what gets mounted.
+
+  if (process.env.NODE_ENV !== 'production') {
+    process.env.NODE_ENV !== 'production' ? warning(this instanceof Constructor, 'Something is calling a React component directly
+. Use a factory or ' + 'JSX instead. See: https://fb.me/react-legacyfactory') : undefined;
+  }
+
+  // Wire up auto-binding
+  if (this.__reactAutoBindMap) {
+    bindAutoBindMethods(this);
+  }
+
+  this.props = props;
+  this.context = context;
+  this.refs = emptyObject;
+  this.updater = updater || ReactNoopUpdateQueue;
+
+  this.state = null;
+
+  // ReactClasses doesn't have constructors. Instead, they use the
+  // getInitialState and componentWillMount methods for initialization.
+
+  var initialState = this.getInitialState ? this.getInitialState() : null;
+  if (process.env.NODE_ENV !== 'production') {
+    // We allow auto-mocks to proceed as if they're returning null.
+    if (typeof initialState === 'undefined' &amp;&amp; this.getInitialState._isMockFunction) {
+      // This is probably bad practice. Consider warning here and
+      // deprecating this convenience.
+      initialState = null;
+    }
+  }
+  !(typeof initialState === 'object' &amp;&amp; !Array.isArray(initialState)) ? process.env.NODE_ENV !== 'production' ? invariant(false, '%
+s.getInitialState(): must return an object or null', Constructor.displayName || 'ReactCompositeComponent') : invariant(false) :
+undefined;
+
+  this.state = initialState;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-select.defaultProps.optionComponent.prototype" id="apidoc.module.react-select.defaultProps.optionComponent.prototype">module react-select.defaultProps.optionComponent.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.defaultProps.optionComponent.prototype.blockEvent" id="apidoc.element.react-select.defaultProps.optionComponent.prototype.blockEvent">
+        function <span class="apidocSignatureSpan">react-select.defaultProps.optionComponent.prototype.</span>blockEvent
+        <span class="apidocSignatureSpan">(event)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function blockEvent(event) {
+		event.preventDefault();
+		if (event.target.tagName !== 'A' || !('href' in event.target)) {
+			return;
+		}
+
+		if (event.target.target) {
+			window.open(event.target.href);
+		} else {
+			window.location.href = event.target.href;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.defaultProps.optionComponent.prototype.constructor" id="apidoc.element.react-select.defaultProps.optionComponent.prototype.constructor">
+        function <span class="apidocSignatureSpan">react-select.defaultProps.optionComponent.prototype.</span>constructor
+        <span class="apidocSignatureSpan">(props, context, updater)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">constructor = function (props, context, updater) {
+  // This constructor is overridden by mocks. The argument is used
+  // by mocks to assert on what gets mounted.
+
+  if (process.env.NODE_ENV !== 'production') {
+    process.env.NODE_ENV !== 'production' ? warning(this instanceof Constructor, 'Something is calling a React component directly
+. Use a factory or ' + 'JSX instead. See: https://fb.me/react-legacyfactory') : undefined;
+  }
+
+  // Wire up auto-binding
+  if (this.__reactAutoBindMap) {
+    bindAutoBindMethods(this);
+  }
+
+  this.props = props;
+  this.context = context;
+  this.refs = emptyObject;
+  this.updater = updater || ReactNoopUpdateQueue;
+
+  this.state = null;
+
+  // ReactClasses doesn't have constructors. Instead, they use the
+  // getInitialState and componentWillMount methods for initialization.
+
+  var initialState = this.getInitialState ? this.getInitialState() : null;
+  if (process.env.NODE_ENV !== 'production') {
+    // We allow auto-mocks to proceed as if they're returning null.
+    if (typeof initialState === 'undefined' &amp;&amp; this.getInitialState._isMockFunction) {
+      // This is probably bad practice. Consider warning here and
+      // deprecating this convenience.
+      initialState = null;
+    }
+  }
+  !(typeof initialState === 'object' &amp;&amp; !Array.isArray(initialState)) ? process.env.NODE_ENV !== 'production' ? invariant(false, '%
+s.getInitialState(): must return an object or null', Constructor.displayName || 'ReactCompositeComponent') : invariant(false) :
+undefined;
+
+  this.state = initialState;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.defaultProps.optionComponent.prototype.getDOMNode" id="apidoc.element.react-select.defaultProps.optionComponent.prototype.getDOMNode">
+        function <span class="apidocSignatureSpan">react-select.defaultProps.optionComponent.prototype.</span>getDOMNode
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getDOMNode = function () {
+  process.env.NODE_ENV !== 'production' ? warning(this.constructor[didWarnKey], '%s.getDOMNode(...) is deprecated. Please use ' + '
+ReactDOM.findDOMNode(instance) instead.', ReactInstanceMap.get(this).getName() || this.tagName || 'Unknown') : undefined;
+  this.constructor[didWarnKey] = true;
+  return findDOMNode(this);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+'use strict';
+
+var focusNode = require("./focusNode");
+
+var AutoFocusMixin = {
+  componentDidMount: function() {
+    if (this.props.autoFocus) {
+      focusNode(this.<span class="apidocCodeKeywordSpan">getDOMNode</span>());
+    }
+  }
+};
+
+module.exports = AutoFocusMixin;
+
+},{"./focusNode":120}],3:[function(require,module,exports){
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.defaultProps.optionComponent.prototype.handleMouseDown" id="apidoc.element.react-select.defaultProps.optionComponent.prototype.handleMouseDown">
+        function <span class="apidocSignatureSpan">react-select.defaultProps.optionComponent.prototype.</span>handleMouseDown
+        <span class="apidocSignatureSpan">(e)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function handleMouseDown(e) {
+		this.props.mouseDown(this.props.option, e);
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.defaultProps.optionComponent.prototype.handleMouseEnter" id="apidoc.element.react-select.defaultProps.optionComponent.prototype.handleMouseEnter">
+        function <span class="apidocSignatureSpan">react-select.defaultProps.optionComponent.prototype.</span>handleMouseEnter
+        <span class="apidocSignatureSpan">(e)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function handleMouseEnter(e) {
+		this.props.mouseEnter(this.props.option, e);
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.defaultProps.optionComponent.prototype.handleMouseLeave" id="apidoc.element.react-select.defaultProps.optionComponent.prototype.handleMouseLeave">
+        function <span class="apidocSignatureSpan">react-select.defaultProps.optionComponent.prototype.</span>handleMouseLeave
+        <span class="apidocSignatureSpan">(e)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function handleMouseLeave(e) {
+		this.props.mouseLeave(this.props.option, e);
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.defaultProps.optionComponent.prototype.render" id="apidoc.element.react-select.defaultProps.optionComponent.prototype.render">
+        function <span class="apidocSignatureSpan">react-select.defaultProps.optionComponent.prototype.</span>render
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function render() {
+		var option = this.props.option;
+		var label = option.create ? this.props.addLabelText.replace('{label}', option.label) : this.props.renderFunc(option);
+		var optionClasses = classes(this.props.className, option.className);
+
+		return option.disabled ? React.createElement(
+			'div',
+			{ className: optionClasses,
+				onMouseDown: this.blockEvent,
+				onClick: this.blockEvent },
+			label
+		) : React.createElement(
+			'div',
+			{ className: optionClasses,
+				style: option.style,
+				onMouseDown: this.handleMouseDown,
+				onMouseEnter: this.handleMouseEnter,
+				onMouseLeave: this.handleMouseLeave,
+				onClick: this.handleMouseDown,
+				title: option.title },
+			label
+		);
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+},
+
+/**
+ * @protected
+ */
+_renderValidatedComponentWithoutOwnerOrContext: function() {
+  var inst = this._instance;
+  var renderedComponent = inst.<span class="apidocCodeKeywordSpan">render</span>();
+  if ("production" !== process.env.NODE_ENV) {
+    // We allow auto-mocks to proceed as if they're returning null.
+    if (typeof renderedComponent === 'undefined' &amp;&amp;
+        inst.render._isMockFunction) {
+      // This is probably bad practice. Consider warning here and
+      // deprecating this convenience.
+      renderedComponent = null;
+...</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-select.defaultProps.optionComponent.prototype.__reactAutoBindMap" id="apidoc.module.react-select.defaultProps.optionComponent.prototype.__reactAutoBindMap">module react-select.defaultProps.optionComponent.prototype.__reactAutoBindMap</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.defaultProps.optionComponent.prototype.__reactAutoBindMap.blockEvent" id="apidoc.element.react-select.defaultProps.optionComponent.prototype.__reactAutoBindMap.blockEvent">
+        function <span class="apidocSignatureSpan">react-select.defaultProps.optionComponent.prototype.__reactAutoBindMap.</span>blockEvent
+        <span class="apidocSignatureSpan">(event)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function blockEvent(event) {
+		event.preventDefault();
+		if (event.target.tagName !== 'A' || !('href' in event.target)) {
+			return;
+		}
+
+		if (event.target.target) {
+			window.open(event.target.href);
+		} else {
+			window.location.href = event.target.href;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.defaultProps.optionComponent.prototype.__reactAutoBindMap.getDOMNode" id="apidoc.element.react-select.defaultProps.optionComponent.prototype.__reactAutoBindMap.getDOMNode">
+        function <span class="apidocSignatureSpan">react-select.defaultProps.optionComponent.prototype.__reactAutoBindMap.</span>getDOMNode
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getDOMNode = function () {
+  process.env.NODE_ENV !== 'production' ? warning(this.constructor[didWarnKey], '%s.getDOMNode(...) is deprecated. Please use ' + '
+ReactDOM.findDOMNode(instance) instead.', ReactInstanceMap.get(this).getName() || this.tagName || 'Unknown') : undefined;
+  this.constructor[didWarnKey] = true;
+  return findDOMNode(this);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+'use strict';
+
+var focusNode = require("./focusNode");
+
+var AutoFocusMixin = {
+  componentDidMount: function() {
+    if (this.props.autoFocus) {
+      focusNode(this.<span class="apidocCodeKeywordSpan">getDOMNode</span>());
+    }
+  }
+};
+
+module.exports = AutoFocusMixin;
+
+},{"./focusNode":120}],3:[function(require,module,exports){
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.defaultProps.optionComponent.prototype.__reactAutoBindMap.handleMouseDown" id="apidoc.element.react-select.defaultProps.optionComponent.prototype.__reactAutoBindMap.handleMouseDown">
+        function <span class="apidocSignatureSpan">react-select.defaultProps.optionComponent.prototype.__reactAutoBindMap.</span>handleMouseDown
+        <span class="apidocSignatureSpan">(e)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function handleMouseDown(e) {
+		this.props.mouseDown(this.props.option, e);
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.defaultProps.optionComponent.prototype.__reactAutoBindMap.handleMouseEnter" id="apidoc.element.react-select.defaultProps.optionComponent.prototype.__reactAutoBindMap.handleMouseEnter">
+        function <span class="apidocSignatureSpan">react-select.defaultProps.optionComponent.prototype.__reactAutoBindMap.</span>handleMouseEnter
+        <span class="apidocSignatureSpan">(e)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function handleMouseEnter(e) {
+		this.props.mouseEnter(this.props.option, e);
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.defaultProps.optionComponent.prototype.__reactAutoBindMap.handleMouseLeave" id="apidoc.element.react-select.defaultProps.optionComponent.prototype.__reactAutoBindMap.handleMouseLeave">
+        function <span class="apidocSignatureSpan">react-select.defaultProps.optionComponent.prototype.__reactAutoBindMap.</span>handleMouseLeave
+        <span class="apidocSignatureSpan">(e)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function handleMouseLeave(e) {
+		this.props.mouseLeave(this.props.option, e);
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-select.defaultProps.singleValueComponent" id="apidoc.module.react-select.defaultProps.singleValueComponent">module react-select.defaultProps.singleValueComponent</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.defaultProps.singleValueComponent.singleValueComponent" id="apidoc.element.react-select.defaultProps.singleValueComponent.singleValueComponent">
+        function <span class="apidocSignatureSpan">react-select.defaultProps.</span>singleValueComponent
+        <span class="apidocSignatureSpan">(props, context, updater)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">singleValueComponent = function (props, context, updater) {
+  // This constructor is overridden by mocks. The argument is used
+  // by mocks to assert on what gets mounted.
+
+  if (process.env.NODE_ENV !== 'production') {
+    process.env.NODE_ENV !== 'production' ? warning(this instanceof Constructor, 'Something is calling a React component directly
+. Use a factory or ' + 'JSX instead. See: https://fb.me/react-legacyfactory') : undefined;
+  }
+
+  // Wire up auto-binding
+  if (this.__reactAutoBindMap) {
+    bindAutoBindMethods(this);
+  }
+
+  this.props = props;
+  this.context = context;
+  this.refs = emptyObject;
+  this.updater = updater || ReactNoopUpdateQueue;
+
+  this.state = null;
+
+  // ReactClasses doesn't have constructors. Instead, they use the
+  // getInitialState and componentWillMount methods for initialization.
+
+  var initialState = this.getInitialState ? this.getInitialState() : null;
+  if (process.env.NODE_ENV !== 'production') {
+    // We allow auto-mocks to proceed as if they're returning null.
+    if (typeof initialState === 'undefined' &amp;&amp; this.getInitialState._isMockFunction) {
+      // This is probably bad practice. Consider warning here and
+      // deprecating this convenience.
+      initialState = null;
+    }
+  }
+  !(typeof initialState === 'object' &amp;&amp; !Array.isArray(initialState)) ? process.env.NODE_ENV !== 'production' ? invariant(false, '%
+s.getInitialState(): must return an object or null', Constructor.displayName || 'ReactCompositeComponent') : invariant(false) :
+undefined;
+
+  this.state = initialState;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-select.defaultProps.singleValueComponent.prototype" id="apidoc.module.react-select.defaultProps.singleValueComponent.prototype">module react-select.defaultProps.singleValueComponent.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.defaultProps.singleValueComponent.prototype.constructor" id="apidoc.element.react-select.defaultProps.singleValueComponent.prototype.constructor">
+        function <span class="apidocSignatureSpan">react-select.defaultProps.singleValueComponent.prototype.</span>constructor
+        <span class="apidocSignatureSpan">(props, context, updater)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">constructor = function (props, context, updater) {
+  // This constructor is overridden by mocks. The argument is used
+  // by mocks to assert on what gets mounted.
+
+  if (process.env.NODE_ENV !== 'production') {
+    process.env.NODE_ENV !== 'production' ? warning(this instanceof Constructor, 'Something is calling a React component directly
+. Use a factory or ' + 'JSX instead. See: https://fb.me/react-legacyfactory') : undefined;
+  }
+
+  // Wire up auto-binding
+  if (this.__reactAutoBindMap) {
+    bindAutoBindMethods(this);
+  }
+
+  this.props = props;
+  this.context = context;
+  this.refs = emptyObject;
+  this.updater = updater || ReactNoopUpdateQueue;
+
+  this.state = null;
+
+  // ReactClasses doesn't have constructors. Instead, they use the
+  // getInitialState and componentWillMount methods for initialization.
+
+  var initialState = this.getInitialState ? this.getInitialState() : null;
+  if (process.env.NODE_ENV !== 'production') {
+    // We allow auto-mocks to proceed as if they're returning null.
+    if (typeof initialState === 'undefined' &amp;&amp; this.getInitialState._isMockFunction) {
+      // This is probably bad practice. Consider warning here and
+      // deprecating this convenience.
+      initialState = null;
+    }
+  }
+  !(typeof initialState === 'object' &amp;&amp; !Array.isArray(initialState)) ? process.env.NODE_ENV !== 'production' ? invariant(false, '%
+s.getInitialState(): must return an object or null', Constructor.displayName || 'ReactCompositeComponent') : invariant(false) :
+undefined;
+
+  this.state = initialState;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.defaultProps.singleValueComponent.prototype.getDOMNode" id="apidoc.element.react-select.defaultProps.singleValueComponent.prototype.getDOMNode">
+        function <span class="apidocSignatureSpan">react-select.defaultProps.singleValueComponent.prototype.</span>getDOMNode
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getDOMNode = function () {
+  process.env.NODE_ENV !== 'production' ? warning(this.constructor[didWarnKey], '%s.getDOMNode(...) is deprecated. Please use ' + '
+ReactDOM.findDOMNode(instance) instead.', ReactInstanceMap.get(this).getName() || this.tagName || 'Unknown') : undefined;
+  this.constructor[didWarnKey] = true;
+  return findDOMNode(this);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+'use strict';
+
+var focusNode = require("./focusNode");
+
+var AutoFocusMixin = {
+  componentDidMount: function() {
+    if (this.props.autoFocus) {
+      focusNode(this.<span class="apidocCodeKeywordSpan">getDOMNode</span>());
+    }
+  }
+};
+
+module.exports = AutoFocusMixin;
+
+},{"./focusNode":120}],3:[function(require,module,exports){
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.defaultProps.singleValueComponent.prototype.render" id="apidoc.element.react-select.defaultProps.singleValueComponent.prototype.render">
+        function <span class="apidocSignatureSpan">react-select.defaultProps.singleValueComponent.prototype.</span>render
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function render() {
+		var classNames = classes('Select-placeholder', this.props.value &amp;&amp; this.props.value.className);
+		return React.createElement(
+			'div',
+			{
+				className: classNames,
+				style: this.props.value &amp;&amp; this.props.value.style,
+				title: this.props.value &amp;&amp; this.props.value.title
+			},
+			this.props.placeholder
+		);
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+},
+
+/**
+ * @protected
+ */
+_renderValidatedComponentWithoutOwnerOrContext: function() {
+  var inst = this._instance;
+  var renderedComponent = inst.<span class="apidocCodeKeywordSpan">render</span>();
+  if ("production" !== process.env.NODE_ENV) {
+    // We allow auto-mocks to proceed as if they're returning null.
+    if (typeof renderedComponent === 'undefined' &amp;&amp;
+        inst.render._isMockFunction) {
+      // This is probably bad practice. Consider warning here and
+      // deprecating this convenience.
+      renderedComponent = null;
+...</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-select.defaultProps.singleValueComponent.prototype.__reactAutoBindMap" id="apidoc.module.react-select.defaultProps.singleValueComponent.prototype.__reactAutoBindMap">module react-select.defaultProps.singleValueComponent.prototype.__reactAutoBindMap</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.defaultProps.singleValueComponent.prototype.__reactAutoBindMap.getDOMNode" id="apidoc.element.react-select.defaultProps.singleValueComponent.prototype.__reactAutoBindMap.getDOMNode">
+        function <span class="apidocSignatureSpan">react-select.defaultProps.singleValueComponent.prototype.__reactAutoBindMap.</span>getDOMNode
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getDOMNode = function () {
+  process.env.NODE_ENV !== 'production' ? warning(this.constructor[didWarnKey], '%s.getDOMNode(...) is deprecated. Please use ' + '
+ReactDOM.findDOMNode(instance) instead.', ReactInstanceMap.get(this).getName() || this.tagName || 'Unknown') : undefined;
+  this.constructor[didWarnKey] = true;
+  return findDOMNode(this);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+'use strict';
+
+var focusNode = require("./focusNode");
+
+var AutoFocusMixin = {
+  componentDidMount: function() {
+    if (this.props.autoFocus) {
+      focusNode(this.<span class="apidocCodeKeywordSpan">getDOMNode</span>());
+    }
+  }
+};
+
+module.exports = AutoFocusMixin;
+
+},{"./focusNode":120}],3:[function(require,module,exports){
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-select.defaultProps.valueComponent" id="apidoc.module.react-select.defaultProps.valueComponent">module react-select.defaultProps.valueComponent</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.defaultProps.valueComponent.valueComponent" id="apidoc.element.react-select.defaultProps.valueComponent.valueComponent">
+        function <span class="apidocSignatureSpan">react-select.defaultProps.</span>valueComponent
+        <span class="apidocSignatureSpan">(props, context, updater)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">valueComponent = function (props, context, updater) {
+  // This constructor is overridden by mocks. The argument is used
+  // by mocks to assert on what gets mounted.
+
+  if (process.env.NODE_ENV !== 'production') {
+    process.env.NODE_ENV !== 'production' ? warning(this instanceof Constructor, 'Something is calling a React component directly
+. Use a factory or ' + 'JSX instead. See: https://fb.me/react-legacyfactory') : undefined;
+  }
+
+  // Wire up auto-binding
+  if (this.__reactAutoBindMap) {
+    bindAutoBindMethods(this);
+  }
+
+  this.props = props;
+  this.context = context;
+  this.refs = emptyObject;
+  this.updater = updater || ReactNoopUpdateQueue;
+
+  this.state = null;
+
+  // ReactClasses doesn't have constructors. Instead, they use the
+  // getInitialState and componentWillMount methods for initialization.
+
+  var initialState = this.getInitialState ? this.getInitialState() : null;
+  if (process.env.NODE_ENV !== 'production') {
+    // We allow auto-mocks to proceed as if they're returning null.
+    if (typeof initialState === 'undefined' &amp;&amp; this.getInitialState._isMockFunction) {
+      // This is probably bad practice. Consider warning here and
+      // deprecating this convenience.
+      initialState = null;
+    }
+  }
+  !(typeof initialState === 'object' &amp;&amp; !Array.isArray(initialState)) ? process.env.NODE_ENV !== 'production' ? invariant(false, '%
+s.getInitialState(): must return an object or null', Constructor.displayName || 'ReactCompositeComponent') : invariant(false) :
+undefined;
+
+  this.state = initialState;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-select.defaultProps.valueComponent.prototype" id="apidoc.module.react-select.defaultProps.valueComponent.prototype">module react-select.defaultProps.valueComponent.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.defaultProps.valueComponent.prototype.blockEvent" id="apidoc.element.react-select.defaultProps.valueComponent.prototype.blockEvent">
+        function <span class="apidocSignatureSpan">react-select.defaultProps.valueComponent.prototype.</span>blockEvent
+        <span class="apidocSignatureSpan">(event)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function blockEvent(event) {
+		event.stopPropagation();
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.defaultProps.valueComponent.prototype.constructor" id="apidoc.element.react-select.defaultProps.valueComponent.prototype.constructor">
+        function <span class="apidocSignatureSpan">react-select.defaultProps.valueComponent.prototype.</span>constructor
+        <span class="apidocSignatureSpan">(props, context, updater)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">constructor = function (props, context, updater) {
+  // This constructor is overridden by mocks. The argument is used
+  // by mocks to assert on what gets mounted.
+
+  if (process.env.NODE_ENV !== 'production') {
+    process.env.NODE_ENV !== 'production' ? warning(this instanceof Constructor, 'Something is calling a React component directly
+. Use a factory or ' + 'JSX instead. See: https://fb.me/react-legacyfactory') : undefined;
+  }
+
+  // Wire up auto-binding
+  if (this.__reactAutoBindMap) {
+    bindAutoBindMethods(this);
+  }
+
+  this.props = props;
+  this.context = context;
+  this.refs = emptyObject;
+  this.updater = updater || ReactNoopUpdateQueue;
+
+  this.state = null;
+
+  // ReactClasses doesn't have constructors. Instead, they use the
+  // getInitialState and componentWillMount methods for initialization.
+
+  var initialState = this.getInitialState ? this.getInitialState() : null;
+  if (process.env.NODE_ENV !== 'production') {
+    // We allow auto-mocks to proceed as if they're returning null.
+    if (typeof initialState === 'undefined' &amp;&amp; this.getInitialState._isMockFunction) {
+      // This is probably bad practice. Consider warning here and
+      // deprecating this convenience.
+      initialState = null;
+    }
+  }
+  !(typeof initialState === 'object' &amp;&amp; !Array.isArray(initialState)) ? process.env.NODE_ENV !== 'production' ? invariant(false, '%
+s.getInitialState(): must return an object or null', Constructor.displayName || 'ReactCompositeComponent') : invariant(false) :
+undefined;
+
+  this.state = initialState;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.defaultProps.valueComponent.prototype.getDOMNode" id="apidoc.element.react-select.defaultProps.valueComponent.prototype.getDOMNode">
+        function <span class="apidocSignatureSpan">react-select.defaultProps.valueComponent.prototype.</span>getDOMNode
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getDOMNode = function () {
+  process.env.NODE_ENV !== 'production' ? warning(this.constructor[didWarnKey], '%s.getDOMNode(...) is deprecated. Please use ' + '
+ReactDOM.findDOMNode(instance) instead.', ReactInstanceMap.get(this).getName() || this.tagName || 'Unknown') : undefined;
+  this.constructor[didWarnKey] = true;
+  return findDOMNode(this);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+'use strict';
+
+var focusNode = require("./focusNode");
+
+var AutoFocusMixin = {
+  componentDidMount: function() {
+    if (this.props.autoFocus) {
+      focusNode(this.<span class="apidocCodeKeywordSpan">getDOMNode</span>());
+    }
+  }
+};
+
+module.exports = AutoFocusMixin;
+
+},{"./focusNode":120}],3:[function(require,module,exports){
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.defaultProps.valueComponent.prototype.handleOnRemove" id="apidoc.element.react-select.defaultProps.valueComponent.prototype.handleOnRemove">
+        function <span class="apidocSignatureSpan">react-select.defaultProps.valueComponent.prototype.</span>handleOnRemove
+        <span class="apidocSignatureSpan">(event)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function handleOnRemove(event) {
+		if (!this.props.disabled) {
+			this.props.onRemove(event);
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.defaultProps.valueComponent.prototype.render" id="apidoc.element.react-select.defaultProps.valueComponent.prototype.render">
+        function <span class="apidocSignatureSpan">react-select.defaultProps.valueComponent.prototype.</span>render
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function render() {
+		var label = this.props.option.label;
+		if (this.props.renderer) {
+			label = this.props.renderer(this.props.option);
+		}
+
+		if (!this.props.onRemove &amp;&amp; !this.props.optionLabelClick) {
+			return React.createElement(
+				'div',
+				{
+					className: classes('Select-value', this.props.option.className),
+					style: this.props.option.style,
+					title: this.props.option.title
+				},
+				label
+			);
+		}
+
+		if (this.props.optionLabelClick) {
+			label = React.createElement(
+				'a',
+				{ className: classes('Select-item-label__a', this.props.option.className),
+					onMouseDown: this.blockEvent,
+					onTouchEnd: this.props.onOptionLabelClick,
+					onClick: this.props.onOptionLabelClick,
+					style: this.props.option.style,
+					title: this.props.option.title },
+				label
+			);
+		}
+
+		return React.createElement(
+			'div',
+			{ className: classes('Select-item', this.props.option.className),
+				style: this.props.option.style,
+				title: this.props.option.title },
+			React.createElement(
+				'span',
+				{ className: 'Select-item-icon',
+					onMouseDown: this.blockEvent,
+					onClick: this.handleOnRemove,
+					onTouchEnd: this.handleOnRemove },
+				'Ã—'
+			),
+			React.createElement(
+				'span',
+				{ className: 'Select-item-label' },
+				label
+			)
+		);
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+},
+
+/**
+ * @protected
+ */
+_renderValidatedComponentWithoutOwnerOrContext: function() {
+  var inst = this._instance;
+  var renderedComponent = inst.<span class="apidocCodeKeywordSpan">render</span>();
+  if ("production" !== process.env.NODE_ENV) {
+    // We allow auto-mocks to proceed as if they're returning null.
+    if (typeof renderedComponent === 'undefined' &amp;&amp;
+        inst.render._isMockFunction) {
+      // This is probably bad practice. Consider warning here and
+      // deprecating this convenience.
+      renderedComponent = null;
+...</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-select.defaultProps.valueComponent.prototype.__reactAutoBindMap" id="apidoc.module.react-select.defaultProps.valueComponent.prototype.__reactAutoBindMap">module react-select.defaultProps.valueComponent.prototype.__reactAutoBindMap</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.defaultProps.valueComponent.prototype.__reactAutoBindMap.blockEvent" id="apidoc.element.react-select.defaultProps.valueComponent.prototype.__reactAutoBindMap.blockEvent">
+        function <span class="apidocSignatureSpan">react-select.defaultProps.valueComponent.prototype.__reactAutoBindMap.</span>blockEvent
+        <span class="apidocSignatureSpan">(event)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function blockEvent(event) {
+		event.stopPropagation();
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.defaultProps.valueComponent.prototype.__reactAutoBindMap.getDOMNode" id="apidoc.element.react-select.defaultProps.valueComponent.prototype.__reactAutoBindMap.getDOMNode">
+        function <span class="apidocSignatureSpan">react-select.defaultProps.valueComponent.prototype.__reactAutoBindMap.</span>getDOMNode
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getDOMNode = function () {
+  process.env.NODE_ENV !== 'production' ? warning(this.constructor[didWarnKey], '%s.getDOMNode(...) is deprecated. Please use ' + '
+ReactDOM.findDOMNode(instance) instead.', ReactInstanceMap.get(this).getName() || this.tagName || 'Unknown') : undefined;
+  this.constructor[didWarnKey] = true;
+  return findDOMNode(this);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+'use strict';
+
+var focusNode = require("./focusNode");
+
+var AutoFocusMixin = {
+  componentDidMount: function() {
+    if (this.props.autoFocus) {
+      focusNode(this.<span class="apidocCodeKeywordSpan">getDOMNode</span>());
+    }
+  }
+};
+
+module.exports = AutoFocusMixin;
+
+},{"./focusNode":120}],3:[function(require,module,exports){
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.defaultProps.valueComponent.prototype.__reactAutoBindMap.handleOnRemove" id="apidoc.element.react-select.defaultProps.valueComponent.prototype.__reactAutoBindMap.handleOnRemove">
+        function <span class="apidocSignatureSpan">react-select.defaultProps.valueComponent.prototype.__reactAutoBindMap.</span>handleOnRemove
+        <span class="apidocSignatureSpan">(event)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function handleOnRemove(event) {
+		if (!this.props.disabled) {
+			this.props.onRemove(event);
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-select.nodeListType" id="apidoc.module.react-select.nodeListType">module react-select.nodeListType</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.nodeListType.installInto" id="apidoc.element.react-select.nodeListType.installInto">
+        function <span class="apidocSignatureSpan">react-select.nodeListType.</span>installInto
+        <span class="apidocSignatureSpan">(expect)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">installInto = function (expect) {
+
+		expect.addType({
+			name: 'NodeList',
+			base: 'array-like',
+			identify: value =&gt; {
+				return typeof window !== 'undefined' &amp;&amp;
+					typeof window.NodeList === 'function' &amp;&amp;
+					value instanceof window.NodeList;
+			}
+		});
+
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-select.propTypes" id="apidoc.module.react-select.propTypes">module react-select.propTypes</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.propTypes.addLabelText" id="apidoc.element.react-select.propTypes.addLabelText">
+        function <span class="apidocSignatureSpan">react-select.propTypes.</span>addLabelText
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">addLabelText = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.propTypes.allowCreate" id="apidoc.element.react-select.propTypes.allowCreate">
+        function <span class="apidocSignatureSpan">react-select.propTypes.</span>allowCreate
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">allowCreate = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.propTypes.asyncOptions" id="apidoc.element.react-select.propTypes.asyncOptions">
+        function <span class="apidocSignatureSpan">react-select.propTypes.</span>asyncOptions
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">asyncOptions = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+					this.setState(newState);
+					if (callback) callback.call(this, newState);
+					return;
+				}
+			}
+		}
+
+		this.props.<span class="apidocCodeKeywordSpan">asyncOptions</span>(input, function (err, data) {
+			if (err) throw err;
+			if (_this6.props.cacheAsyncResults) {
+				_this6._optionsCache[input] = data;
+			}
+			if (thisRequestId !== _this6._currentRequestId) {
+				return;
+			}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.propTypes.autoload" id="apidoc.element.react-select.propTypes.autoload">
+        function <span class="apidocSignatureSpan">react-select.propTypes.</span>autoload
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">autoload = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.propTypes.backspaceRemoves" id="apidoc.element.react-select.propTypes.backspaceRemoves">
+        function <span class="apidocSignatureSpan">react-select.propTypes.</span>backspaceRemoves
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">backspaceRemoves = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.propTypes.cacheAsyncResults" id="apidoc.element.react-select.propTypes.cacheAsyncResults">
+        function <span class="apidocSignatureSpan">react-select.propTypes.</span>cacheAsyncResults
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">cacheAsyncResults = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.propTypes.className" id="apidoc.element.react-select.propTypes.className">
+        function <span class="apidocSignatureSpan">react-select.propTypes.</span>className
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">className = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.propTypes.clearAllText" id="apidoc.element.react-select.propTypes.clearAllText">
+        function <span class="apidocSignatureSpan">react-select.propTypes.</span>clearAllText
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">clearAllText = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.propTypes.clearValueText" id="apidoc.element.react-select.propTypes.clearValueText">
+        function <span class="apidocSignatureSpan">react-select.propTypes.</span>clearValueText
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">clearValueText = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.propTypes.clearable" id="apidoc.element.react-select.propTypes.clearable">
+        function <span class="apidocSignatureSpan">react-select.propTypes.</span>clearable
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">clearable = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.propTypes.delimiter" id="apidoc.element.react-select.propTypes.delimiter">
+        function <span class="apidocSignatureSpan">react-select.propTypes.</span>delimiter
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">delimiter = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.propTypes.disabled" id="apidoc.element.react-select.propTypes.disabled">
+        function <span class="apidocSignatureSpan">react-select.propTypes.</span>disabled
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">disabled = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.propTypes.filterOption" id="apidoc.element.react-select.propTypes.filterOption">
+        function <span class="apidocSignatureSpan">react-select.propTypes.</span>filterOption
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">filterOption = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.propTypes.filterOptions" id="apidoc.element.react-select.propTypes.filterOptions">
+        function <span class="apidocSignatureSpan">react-select.propTypes.</span>filterOptions
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">filterOptions = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+		var _this2 = this;
+
+		var optionsChanged = false;
+		if (JSON.stringify(newProps.options) !== JSON.stringify(this.props.options)) {
+			optionsChanged = true;
+			this.setState({
+				options: newProps.options,
+				filteredOptions: this.<span class="apidocCodeKeywordSpan">filterOptions</span>(newProps.options)
+			});
+		}
+		if (newProps.value !== this.state.value || newProps.placeholder !== this.props.placeholder || optionsChanged) {
+			var setState = function setState(newState) {
+				_this2.setState(_this2.getStateFromValue(newProps.value, newState &amp;&amp; newState.options || newProps.options, newProps
+.placeholder));
+			};
+			if (this.props.asyncOptions) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.propTypes.ignoreCase" id="apidoc.element.react-select.propTypes.ignoreCase">
+        function <span class="apidocSignatureSpan">react-select.propTypes.</span>ignoreCase
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">ignoreCase = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.propTypes.inputProps" id="apidoc.element.react-select.propTypes.inputProps">
+        function <span class="apidocSignatureSpan">react-select.propTypes.</span>inputProps
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">inputProps = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.propTypes.isLoading" id="apidoc.element.react-select.propTypes.isLoading">
+        function <span class="apidocSignatureSpan">react-select.propTypes.</span>isLoading
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isLoading = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.propTypes.labelKey" id="apidoc.element.react-select.propTypes.labelKey">
+        function <span class="apidocSignatureSpan">react-select.propTypes.</span>labelKey
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">labelKey = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.propTypes.matchPos" id="apidoc.element.react-select.propTypes.matchPos">
+        function <span class="apidocSignatureSpan">react-select.propTypes.</span>matchPos
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">matchPos = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.propTypes.matchProp" id="apidoc.element.react-select.propTypes.matchProp">
+        function <span class="apidocSignatureSpan">react-select.propTypes.</span>matchProp
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">matchProp = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.propTypes.multi" id="apidoc.element.react-select.propTypes.multi">
+        function <span class="apidocSignatureSpan">react-select.propTypes.</span>multi
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">multi = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.propTypes.name" id="apidoc.element.react-select.propTypes.name">
+        function <span class="apidocSignatureSpan">react-select.propTypes.</span>name
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">name = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.propTypes.newOptionCreator" id="apidoc.element.react-select.propTypes.newOptionCreator">
+        function <span class="apidocSignatureSpan">react-select.propTypes.</span>newOptionCreator
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">newOptionCreator = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+			focusedValue = focusedValue == null ? this.state.filteredOptions[0] : focusedValue;
+		}
+		// Add the current value to the filtered options in last resort
+		var options = this.state.filteredOptions;
+		if (this.props.allowCreate &amp;&amp; this.state.inputValue.trim()) {
+			var inputValue = this.state.inputValue;
+			options = options.slice();
+			var newOption = this.props.newOptionCreator ? this.props.<span class="apidocCodeKeywordSpan">newOptionCreator</span>(inputValue
+) : {
+				value: inputValue,
+				label: inputValue,
+				create: true
+			};
+			options.unshift(newOption);
+		}
+		var ops = Object.keys(options).map(function (key) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.propTypes.noResultsText" id="apidoc.element.react-select.propTypes.noResultsText">
+        function <span class="apidocSignatureSpan">react-select.propTypes.</span>noResultsText
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">noResultsText = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.propTypes.onBlur" id="apidoc.element.react-select.propTypes.onBlur">
+        function <span class="apidocSignatureSpan">react-select.propTypes.</span>onBlur
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">onBlur = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+			if (_this4._focusAfterUpdate) return;
+			_this4.setState({
+				isFocused: false,
+				isOpen: false
+			});
+		}, 50);
+		if (this.props.onBlur) {
+			this.props.<span class="apidocCodeKeywordSpan">onBlur</span>(event);
+		}
+	},
+
+	handleKeyDown: function handleKeyDown(event) {
+		event.preventDefault();
+		if (this.props.disabled) return;
+		switch (event.keyCode) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.propTypes.onChange" id="apidoc.element.react-select.propTypes.onChange">
+        function <span class="apidocSignatureSpan">react-select.propTypes.</span>onChange
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">onChange = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+	getInputNode: function getInputNode() {
+		var input = this.refs.input;
+		return this.props.searchable ? input : React.findDOMNode(input);
+	},
+
+	fireChangeEvent: function fireChangeEvent(newState) {
+		if (newState.value !== this.state.value &amp;&amp; this.props.onChange) {
+			this.props.<span class="apidocCodeKeywordSpan">onChange</span>(newState.value, newState.values);
+		}
+	},
+
+	handleMouseDown: function handleMouseDown(event) {
+		// if the event was triggered by a mousedown and not the primary
+		// button, or if the component is disabled, ignore it.
+		if (this.props.disabled || event.type === 'mousedown' &amp;&amp; event.button !== 0) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.propTypes.onFocus" id="apidoc.element.react-select.propTypes.onFocus">
+        function <span class="apidocSignatureSpan">react-select.propTypes.</span>onFocus
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">onFocus = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+				this._bindCloseMenuIfClickedOutside();
+			} else {
+				this._unbindCloseMenuIfClickedOutside();
+			}
+		});
+		this._openAfterFocus = false;
+		if (this.props.onFocus) {
+			this.props.<span class="apidocCodeKeywordSpan">onFocus</span>(event);
+		}
+	},
+
+	handleInputBlur: function handleInputBlur(event) {
+		var _this4 = this;
+
+		this._blurTimeout = setTimeout(function () {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.propTypes.onInputChange" id="apidoc.element.react-select.propTypes.onInputChange">
+        function <span class="apidocSignatureSpan">react-select.propTypes.</span>onInputChange
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">onInputChange = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.propTypes.onOptionLabelClick" id="apidoc.element.react-select.propTypes.onOptionLabelClick">
+        function <span class="apidocSignatureSpan">react-select.propTypes.</span>onOptionLabelClick
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">onOptionLabelClick = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+				noResultsText
+			);
+		}
+	},
+
+	handleOptionLabelClick: function handleOptionLabelClick(value, event) {
+		if (this.props.onOptionLabelClick) {
+			this.props.<span class="apidocCodeKeywordSpan">onOptionLabelClick</span>(value, event);
+		}
+	},
+
+	render: function render() {
+		var selectClass = classes('Select', this.props.className, {
+			'is-multi': this.props.multi,
+			'is-searchable': this.props.searchable,
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.propTypes.optionComponent" id="apidoc.element.react-select.propTypes.optionComponent">
+        function <span class="apidocSignatureSpan">react-select.propTypes.</span>optionComponent
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">optionComponent = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.propTypes.optionRenderer" id="apidoc.element.react-select.propTypes.optionRenderer">
+        function <span class="apidocSignatureSpan">react-select.propTypes.</span>optionRenderer
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">optionRenderer = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.propTypes.options" id="apidoc.element.react-select.propTypes.options">
+        function <span class="apidocSignatureSpan">react-select.propTypes.</span>options
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">options = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.propTypes.placeholder" id="apidoc.element.react-select.propTypes.placeholder">
+        function <span class="apidocSignatureSpan">react-select.propTypes.</span>placeholder
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">placeholder = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.propTypes.searchPromptText" id="apidoc.element.react-select.propTypes.searchPromptText">
+        function <span class="apidocSignatureSpan">react-select.propTypes.</span>searchPromptText
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">searchPromptText = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.propTypes.searchable" id="apidoc.element.react-select.propTypes.searchable">
+        function <span class="apidocSignatureSpan">react-select.propTypes.</span>searchable
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">searchable = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.propTypes.searchingText" id="apidoc.element.react-select.propTypes.searchingText">
+        function <span class="apidocSignatureSpan">react-select.propTypes.</span>searchingText
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">searchingText = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.propTypes.singleValueComponent" id="apidoc.element.react-select.propTypes.singleValueComponent">
+        function <span class="apidocSignatureSpan">react-select.propTypes.</span>singleValueComponent
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">singleValueComponent = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.propTypes.value" id="apidoc.element.react-select.propTypes.value">
+        function <span class="apidocSignatureSpan">react-select.propTypes.</span>value
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">value = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.propTypes.valueComponent" id="apidoc.element.react-select.propTypes.valueComponent">
+        function <span class="apidocSignatureSpan">react-select.propTypes.</span>valueComponent
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">valueComponent = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.propTypes.valueKey" id="apidoc.element.react-select.propTypes.valueKey">
+        function <span class="apidocSignatureSpan">react-select.propTypes.</span>valueKey
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">valueKey = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.propTypes.valueRenderer" id="apidoc.element.react-select.propTypes.valueRenderer">
+        function <span class="apidocSignatureSpan">react-select.propTypes.</span>valueRenderer
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">valueRenderer = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-select.propTypes.addLabelText" id="apidoc.module.react-select.propTypes.addLabelText">module react-select.propTypes.addLabelText</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.propTypes.addLabelText.addLabelText" id="apidoc.element.react-select.propTypes.addLabelText.addLabelText">
+        function <span class="apidocSignatureSpan">react-select.propTypes.</span>addLabelText
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">addLabelText = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.propTypes.addLabelText.isRequired" id="apidoc.element.react-select.propTypes.addLabelText.isRequired">
+        function <span class="apidocSignatureSpan">react-select.propTypes.addLabelText.</span>isRequired
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isRequired = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-select.propTypes.allowCreate" id="apidoc.module.react-select.propTypes.allowCreate">module react-select.propTypes.allowCreate</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.propTypes.allowCreate.allowCreate" id="apidoc.element.react-select.propTypes.allowCreate.allowCreate">
+        function <span class="apidocSignatureSpan">react-select.propTypes.</span>allowCreate
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">allowCreate = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.propTypes.allowCreate.isRequired" id="apidoc.element.react-select.propTypes.allowCreate.isRequired">
+        function <span class="apidocSignatureSpan">react-select.propTypes.allowCreate.</span>isRequired
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isRequired = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-select.propTypes.asyncOptions" id="apidoc.module.react-select.propTypes.asyncOptions">module react-select.propTypes.asyncOptions</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.propTypes.asyncOptions.asyncOptions" id="apidoc.element.react-select.propTypes.asyncOptions.asyncOptions">
+        function <span class="apidocSignatureSpan">react-select.propTypes.</span>asyncOptions
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">asyncOptions = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+					this.setState(newState);
+					if (callback) callback.call(this, newState);
+					return;
+				}
+			}
+		}
+
+		this.props.<span class="apidocCodeKeywordSpan">asyncOptions</span>(input, function (err, data) {
+			if (err) throw err;
+			if (_this6.props.cacheAsyncResults) {
+				_this6._optionsCache[input] = data;
+			}
+			if (thisRequestId !== _this6._currentRequestId) {
+				return;
+			}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.propTypes.asyncOptions.isRequired" id="apidoc.element.react-select.propTypes.asyncOptions.isRequired">
+        function <span class="apidocSignatureSpan">react-select.propTypes.asyncOptions.</span>isRequired
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isRequired = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-select.propTypes.inputProps" id="apidoc.module.react-select.propTypes.inputProps">module react-select.propTypes.inputProps</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.propTypes.inputProps.inputProps" id="apidoc.element.react-select.propTypes.inputProps.inputProps">
+        function <span class="apidocSignatureSpan">react-select.propTypes.</span>inputProps
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">inputProps = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.propTypes.inputProps.isRequired" id="apidoc.element.react-select.propTypes.inputProps.isRequired">
+        function <span class="apidocSignatureSpan">react-select.propTypes.inputProps.</span>isRequired
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isRequired = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-select.propTypes.options" id="apidoc.module.react-select.propTypes.options">module react-select.propTypes.options</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.propTypes.options.options" id="apidoc.element.react-select.propTypes.options.options">
+        function <span class="apidocSignatureSpan">react-select.propTypes.</span>options
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">options = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.propTypes.options.isRequired" id="apidoc.element.react-select.propTypes.options.isRequired">
+        function <span class="apidocSignatureSpan">react-select.propTypes.options.</span>isRequired
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isRequired = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-select.propTypes.value" id="apidoc.module.react-select.propTypes.value">module react-select.propTypes.value</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.propTypes.value.value" id="apidoc.element.react-select.propTypes.value.value">
+        function <span class="apidocSignatureSpan">react-select.propTypes.</span>value
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">value = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.propTypes.value.isRequired" id="apidoc.element.react-select.propTypes.value.isRequired">
+        function <span class="apidocSignatureSpan">react-select.propTypes.value.</span>isRequired
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isRequired = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
