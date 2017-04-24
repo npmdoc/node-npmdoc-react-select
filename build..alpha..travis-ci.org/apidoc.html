@@ -63,6 +63,15 @@
 
         <li>
 
+            <a class="apidocElementLiA" href="#apidoc.element.react-select.react-select">
+            function <span class="apidocSignatureSpan"></span>react-select
+            <span class="apidocSignatureSpan">(props, context, updater)</span>
+            </a>
+
+        </li>
+
+        <li>
+
             <a class="apidocElementLiA" href="#apidoc.element.react-select.defaultProps.optionComponent">
             function <span class="apidocSignatureSpan">react-select.</span>defaultProps.optionComponent
             <span class="apidocSignatureSpan">(props, context, updater)</span>
@@ -1525,6 +1534,57 @@
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.react-select" id="apidoc.module.react-select">module react-select</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-select.react-select" id="apidoc.element.react-select.react-select">
+        function <span class="apidocSignatureSpan"></span>react-select
+        <span class="apidocSignatureSpan">(props, context, updater)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">react-select = function (props, context, updater) {
+  // This constructor is overridden by mocks. The argument is used
+  // by mocks to assert on what gets mounted.
+
+  if (process.env.NODE_ENV !== &#x27;production&#x27;) {
+    process.env.NODE_ENV !== &#x27;production&#x27; ? warning(this instanceof Constructor, &#x27;Something is calling a React component directly
+. Use a factory or &#x27; + &#x27;JSX instead. See: https://fb.me/react-legacyfactory&#x27;) : undefined;
+  }
+
+  // Wire up auto-binding
+  if (this.__reactAutoBindMap) {
+    bindAutoBindMethods(this);
+  }
+
+  this.props = props;
+  this.context = context;
+  this.refs = emptyObject;
+  this.updater = updater || ReactNoopUpdateQueue;
+
+  this.state = null;
+
+  // ReactClasses doesn&#x27;t have constructors. Instead, they use the
+  // getInitialState and componentWillMount methods for initialization.
+
+  var initialState = this.getInitialState ? this.getInitialState() : null;
+  if (process.env.NODE_ENV !== &#x27;production&#x27;) {
+    // We allow auto-mocks to proceed as if they&#x27;re returning null.
+    if (typeof initialState === &#x27;undefined&#x27; &#x26;&#x26; this.getInitialState._isMockFunction) {
+      // This is probably bad practice. Consider warning here and
+      // deprecating this convenience.
+      initialState = null;
+    }
+  }
+  !(typeof initialState === &#x27;object&#x27; &#x26;&#x26; !Array.isArray(initialState)) ? process.env.NODE_ENV !== &#x27;production&#x27; ? invariant(false, &#x27;%
+s.getInitialState(): must return an object or null&#x27;, Constructor.displayName || &#x27;ReactCompositeComponent&#x27;) : invariant(false) :
+undefined;
+
+  this.state = initialState;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
 
 
     <h2>
